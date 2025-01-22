@@ -1,24 +1,34 @@
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: translate(100px);
+    background-color: tomato;
+  }
+  100% {
+    transform: translate(0);
+    background-color: gold;
+  }
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .box {
   width: 150px;
   height: 150px;
-  background-color: gold;
   font-size: 1.3rem;
-  transition: transform 4.3s cubic-bezier(.17,.67,.83,.67), background-color 2s;
+  background-color: gold;
 }
 
-.box:hover {
-  /* transform: rotate(45deg); */
-  /* transform: scale(1.5);
-  transform: skew(10deg); */
-  /* transform: translate(20px, 30px); */
-  /* transform: perspective(200px) translateZ(150px); */
-  transform: perspective(200px) rotateX(30deg);
-  background-color: aquamarine;
+.animation-pop {
+  animation: fadeRight 2s linear infinite;
+}
+
+.box-button {
+  cursor: pointer;
 }
