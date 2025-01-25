@@ -14,21 +14,21 @@
     background-color: gold;
   }
 }
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
 .box {
   width: 150px;
   height: 150px;
-  font-size: 1.3rem;
   background-color: gold;
+  font-size: 1.3rem;
 }
-
 .animation-pop {
-  animation: fadeRight 2s linear infinite;
+  animation: fadeInRight 2s linear infinite;
 }
-
 .box-button {
   cursor: pointer;
 }
