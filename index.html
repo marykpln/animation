@@ -11,15 +11,10 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="box">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
-        debitis.
-      </div>
-      <div class="box box-button" id="box_animate" onclick="startStop()">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </div>
-    </div>
+    <div class="box" id="box1" onclick="start()"></div>
+    <div class="box" id="box2" onclick="stop()"></div>
+    <button id="startBtn" onclick="start()">Start</button>
+    <button id="stopBtn" onclick="stop()">Stop</button>
     <script src="src/animator.js"></script>
   </body>
 </html>
