@@ -1,51 +1,44 @@
-/* Общие стили для body */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Размещение элементов в столбик */
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
 }
 
-/* Стиль для кругов */
 .box {
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* Делаем элементы круглыми */
-  margin: 20px; /* Расстояние между элементами */
-  background-color: #3498db; /* Синий цвет для первого круга */
+  border-radius: 50%;
+  margin: 20px;
+  background-color: #3498db;
 }
 
-/* Стиль для кнопок */
 button {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  margin-top: 20px; /* Отступ сверху для кнопок */
+  margin-top: 20px;
 }
 
-/* Кнопка Start */
 #startBtn {
   background-color: green;
   color: white;
 }
 
-/* Кнопка Stop */
 #stopBtn {
   background-color: red;
   color: white;
 }
 
-/* Класс для анимации */
 .animate {
-  animation: moveAround 5s linear infinite; /* Анимация движения */
+  animation: moveAround 5s linear infinite;
 }
 
-/* Ключевые кадры для анимации */
 @keyframes moveAround {
   0% {
     transform: translate(0, 0);
